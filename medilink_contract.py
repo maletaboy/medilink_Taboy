@@ -13,7 +13,7 @@ def build_summary(
         raise ValueError("clinic_status must be a non-empty string")
 
     return {
-        "patient": dict(patient),
-        "appointments": list(appointments),
-        "clinic_status": clinic_status.strip().upper(),
-    }
+    "patient": dict(patient),
+    "appointments": list(appointments),
+    "status": clinic_status.strip().upper(),
+}
