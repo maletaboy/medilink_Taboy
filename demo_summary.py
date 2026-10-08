@@ -16,7 +16,7 @@ def main() -> None:
         }
     ]
 
-    summary = build_summary(patient, appointments)
+    summary = build_summary(patient, appointments, "maintenance")
     print(json.dumps(summary, indent=2))
 
 
